@@ -126,6 +126,17 @@
 
 
 <!-- Floating Decorations -->
+ <script>
+for(let i=0;i<6;i++){
+  const c=document.createElement("span");
+  c.innerHTML="✦";
+  c.className="absolute text-pink-300 text-sm animate-bounce";
+  c.style.left=(Math.random()*80+10)+"%";
+  c.style.top=(Math.random()*80+10)+"%";
+  document.querySelector('.relative.w-48').appendChild(c);
+}
+</script>
+
 <div class="fixed inset-0 pointer-events-none overflow-hidden -z-10">
   <span class="absolute top-10 left-10 text-pink-300 text-4xl animate-bounce">✿</span>
   <span class="absolute top-1/3 right-16 text-pink-200 text-5xl animate-pulse">♡</span>
